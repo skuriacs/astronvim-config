@@ -10,6 +10,7 @@ return {
         ["<Leader>q"] = false,
         ["<C-u>"] = { "<C-u>zz", desc = "Scroll up and center" },
         ["<C-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
+        ["<Leader><Leader>"] = { "<C-^>", desc = "Switch to last buffer" },
       },
     },
   },
