@@ -12,7 +12,10 @@ return {
         ["<C-d>"] = { "<C-d>zz", desc = "Scroll down and center" },
         ["<Leader><Leader>"] = { "<C-^>", desc = "Switch to last buffer" },
         ["<Leader>gg"] = {
-          function() require("neogit").open { kind = "floating" } end,
+          function() require("neogit").open { kind = "tab" } end,
+        },
+        ["<Leader>lc"] = {
+          function() require("copilot.suggestion").toggle_auto_trigger() end,
         },
       },
     },
